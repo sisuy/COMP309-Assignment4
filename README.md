@@ -78,18 +78,18 @@
 
 * Step 5. Build classification (or regression) models using the training data && Step 7. Assess model on the test data.
 
-  |               Model               |                          Parameters                          |    MSE     |  RMSE   | RSE  |  MAE   | excution time |
-  | :-------------------------------: | :----------------------------------------------------------: | :--------: | :-----: | :--: | :----: | :-----------: |
-  |         linear regression         |                       positive = True                        | 1647909.22 | 1283.71 | 0.13 | 816.89 |     0.02s     |
-  |      k-neighbors regression       |                           Default                            | 1339014.10 | 1157.16 | 0.12 | 554.29 |     1.49s     |
-  |         Ridge regression          |                           Default                            | 2190847.01 | 1480.15 | 0.21 | 848.85 |    0.004s     |
-  |     decision tree regression      |                       Max_depth = None                       | 825284.43  | 908.45  | 0.06 | 413.07 |     0.02s     |
-  |     random forest regression      |                     n_estimators = 1000                      | 632325.04  | 795.19  | 0.05 | 336.00 |   1m50.00s    |
-  |   gradient Boosting regression    |                       Max_depth = none                       | 791343.44  | 889.57  | 0.06 | 401.06 |    17.83s     |
-  |          SGD regression           |                           Default                            | 2178494.94 | 1475.97 | 0.22 | 864.34 |     0.20s     |
-  |  support vector regression (SVR)  |                            C=1500                            | 998458.52  | 999.23  | 0.09 | 524.38 |    3m6.66s    |
-  |            linear SVR             | max_iter=50000, C = 5.0, loss = 'squared_epsilon_insensitive' ,dual = True | 2201090.06 | 1483.61 | 0.21 | 848.94 |    10.78s     |
-  | multi-layer perceptron regression |                        max_iter=5000                         | 570093.37  | 755.05  | 0.04 | 391.20 |   3m22.46s    |
+  |               Model               |                          Parameters                          |      MSE       |    RMSE     |   RSE    |    MAE     | excution time |
+  | :-------------------------------: | :----------------------------------------------------------: | :------------: | :---------: | :------: | :--------: | :-----------: |
+  |         linear regression         |                       positive = True                        | 1647909.22(7)  | 1283.71(7)  | 0.13(7)  | 816.89(7)  |   0.02s(2)    |
+  |      k-neighbors regression       |                           Default                            | 1339014.10(6)  | 1157.16(6)  | 0.12(6)  | 554.29(6)  |   1.49s(5)    |
+  |         Ridge regression          |                           Default                            | 2190847.01(9)  | 1480.15(9)  | 0.21(8)  | 848.85(8)  |   0.004s(1)   |
+  |     decision tree regression      |                       Max_depth = None                       |  825284.43(4)  |  908.45(4)  | 0.06(4)  | 413.07(4)  |   0.02s(3)    |
+  |     random forest regression      |                     n_estimators = 1000                      |  632325.04(2)  |  795.19(2)  | 0.05(2)  | 336.00(1)  |  1m50.00s(8)  |
+  |   gradient Boosting regression    |                       Max_depth = none                       |  791343.44(3)  |  889.57(3)  | 0.06(3)  | 401.06(3)  |   17.83s(7)   |
+  |          SGD regression           |                           Default                            | 2178494.94(8)  | 1475.97(8)  | 0.22(10) | 864.34(10) |   0.20s(4)    |
+  |  support vector regression (SVR)  |                            C=1500                            |  998458.52(5)  |  999.23(5)  | 0.09(5)  | 524.38(5)  |  3m6.66s(9)   |
+  |            linear SVR             | max_iter=50000, C = 5.0, loss = 'squared_epsilon_insensitive' ,dual = True | 2201090.06(10) | 1483.61(10) | 0.21(9)  | 848.94(9)  |   10.78s(6)   |
+  | multi-layer perceptron regression |                        max_iter=5000                         |  570093.37(1)  |  755.05(1)  | 0.04(1)  | 391.20(2)  | 3m22.46s(10)  |
 
   ### Discussion
 
