@@ -76,6 +76,15 @@
       | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
       |  30  |  40  |  50  |  60  |  70  |  80  |  90  |
 
+  * Standardization
+
+    ```python
+    # standardization
+    scaler = StandardScaler()
+    standard_train = scaler.fit_transform(preprocess_train)   
+    standard_test = scaler.fit_transform(preprocess_test)
+    ```
+
 * Step 5. Build classification (or regression) models using the training data && Step 7. Assess model on the test data.
 
   |               Model               |                          Parameters                          |      MSE       |    RMSE     |   RSE    |    MAE     | excution time |
@@ -93,4 +102,4 @@
 
   ### Discussion
 
-  
+  From the table, we can find that multi-layer-preceptron regression, random forest, and gradient boosting regression have a good performance in diamond dataset, but there are some simple model doesn't suitable for this datset(SGD, linear SVR). Although those simple model take short time in excution stage, they still can't get a great performance. MLP and random forest model takes a long time in excution, but those two model won't be influenced by similar linear features and they will analysis the relationship between features(which help those two model have a better performance than other models). 
