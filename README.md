@@ -216,19 +216,20 @@
 
 ​			In this part, I use default parameters in every model
 
-|          Model name          | Accuracy | Precision | Recall | F1-score | AUC  |
-| :--------------------------: | :------: | :-------: | :----: | :------: | :--: |
-|             KNN              |   0.84   |   0.70    |  0.62  |   0.66   | 0.77 |
-|         Naive Bayes          |   0.83   |   0.66    |  0.64  |   0.65   | 0.77 |
-|             SVM              |   0.80   |   0.73    |  0.27  |   0.39   | 0.62 |
-|        Decision Tree         |   0.82   |   0.64    |  0.59  |   0.61   | 0.74 |
-|        Random Forest         |   0.84   |   0.70    |  0.61  |   0.65   | 0.76 |
-|           AdaBoost           |   0.86   |   0.76    |  0.60  |   0.67   | 0.77 |
-|      Gradient Boosting       |   0.86   |   0.79    |  0.61  |   0.69   | 0.78 |
-| Linear discriminant analysis |   0.84   |   0.71    |  0.55  |   0.62   | 0.74 |
-|    Multi-layer perceptron    |   0.84   |   0.75    |  0.55  |   0.63   | 0.74 |
-|     Logistic regression      |   0.81   |   0.63    |  0.55  |   0.59   | 0.72 |
+|          Model name          | accuracy | Precision |  Recall  | F1-score |   AUC    |
+| :--------------------------: | :------: | :-------: | :------: | :------: | :------: |
+|             KNN              | 0.84(4)  |  0.70(6)  | 0.62(2)  | 0.66(3)  | 0.77(3)  |
+|         Naive Bayes          | 0.83(7)  |  0.66(8)  | 0.64(1)  | 0.65(4)  | 0.77(4)  |
+|             SVM              | 0.80(10) |  0.73(4)  | 0.27(10) | 0.39(10) | 0.62(10) |
+|        Decision Tree         | 0.82(8)  |  0.64(9)  | 0.59(6)  | 0.61(8)  | 0.74(7)  |
+|        Random Forest         | 0.84(5)  |  0.70(7)  | 0.61(4)  | 0.65(5)  | 0.76(5)  |
+|           AdaBoost           | 0.86(2)  |  0.76(2)  | 0.60(5)  | 0.67(2)  | 0.77(2)  |
+|      Gradient Boosting       | 0.86(1)  |  0.79(1)  | 0.61(3)  | 0.69(1)  | 0.78(1)  |
+| Linear discriminant analysis | 0.84(6)  |  0.71(5)  | 0.55(8)  | 0.62(7)  | 0.74(8)  |
+|    Multi-layer perceptron    | 0.84(3)  |  0.75(3)  | 0.55(9)  | 0.63(6)  | 0.74(6)  |
+|     Logistic regression      | 0.81(9)  | 0.63(10)  | 0.55(7)  | 0.59(9)  | 0.72(9)  |
 
 
 
 - Find the two best algorithms according to each of the four performance metrics, Are they the same? Explain why.
+
