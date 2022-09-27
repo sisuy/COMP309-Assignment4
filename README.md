@@ -24,15 +24,15 @@
 
   Heat map
 
-  ![image-20220926163800751](/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926163800751.png)
+  <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926163800751.png" alt="image-20220926163800751" style="zoom:50%;" />
 
-| price |          |
-| :---: | :------: |
-| carat | 0.921591 |
-|   x   | 0.884435 |
-|   y   | 0.865421 |
-|   z   | 0.861249 |
-| price | 1.000000 |
+|           | Correlation |
+| :-------: | :---------: |
+| **carat** |  0.921591   |
+|   **x**   |  0.884435   |
+|   **y**   |  0.865421   |
+|   **z**   |  0.861249   |
+| **price** |  1.000000   |
 
 
 
@@ -199,7 +199,7 @@
       high_salary_corr.sort_values(by="salary",ascending=False)
       ```
 
-      <img src="assets/image-20220927165030851.png" alt="image-20220927165030851" style="zoom: 33%;" />
+      <img src="assets/image-20220927165030851.png" alt="image-20220927165030851" style="zoom: 25%;" />
 
     * Demension reduction based on correlation
 
@@ -216,7 +216,7 @@
 
 ​			In this part, I use default parameters in every model
 
-|          Model name          | accuracy | Precision |  Recall  | F1-score |   AUC    |
+|          Model name          | Accuracy | Precision |  Recall  | F1-score |   AUC    |
 | :--------------------------: | :------: | :-------: | :------: | :------: | :------: |
 |             KNN              | 0.84(4)  |  0.70(6)  | 0.62(2)  | 0.66(3)  | 0.77(3)  |
 |         Naive Bayes          | 0.83(7)  |  0.66(8)  | 0.64(1)  | 0.65(4)  | 0.77(4)  |
@@ -232,4 +232,41 @@
 
 
 - Find the two best algorithms according to each of the four performance metrics, Are they the same? Explain why.
+  * Accuracy
+    * Definition: Predicted correct results as a percentage of the total sample
+    * $Accuracy = \frac{TP + TN}{TP+FP+TN+FN}$
+    * Best two models: Gradient Boosting, AdaBoost
+  * Precision
+    * Definition: The probability that all predicted positive samples are actually positive
+    * $Precision = \frac{TP}{TP + FP}$
+    * Best two models: Gradient Boosting, AdaBoost
+  * Recall
+    * The probability of being predicted to be positive among the actual positive samples
+    * $Recall = \frac{TP}{TP + FN}$
+    * Best two models: KNN, Naive Bayes
+  * F1-Score
+    * Harmonic mean of precision and recall
+    *  $F_1 = 2\frac{Precission \cdot Recall}{Precission + Recall}$
+    * Best two models: Gradient Boosting, AdaBoost
+  * AUC(Area Under the ROC curve)
+    * Gives an overall measure of a classifier’s performance
+    * Best two models: Gradient Boosting, AdaBoost
+
+The best models in **Accuracy, Precision, F1-score and AUC** are **same**(Gradient Boosting, AdaBoost), but the best model in Recall are KNN and Naive Bayes.
+
+### Why are they mostly the same?
+
+Accuracy by quantifying the correct rate predicted by the model provides an intuitive way for us to evaluate the model. 
+
+precision represents the accuracy of the model for positive samples.
+
+Recall describes the ability of the model to predict the correct rate of positive samples.
+
+However, the F1-score is a hamonic mean of precision and recall, so its result will be simillar with precision and recall.
+
+AUC is a better measure than accuracy based on formal definitions of discriminancy and consistency.
+
+To sum up, the F1 score is based on precision and recall, and F1, AUC, and accuracy can all be used to evaluate the model generally, which is why the results are almost the same (because Gradient Boosting, AdaBoost, while maintaining high precision, It also maintains recall at a moderately high level, which results in a high composite score for both models relative to the other models)
+
+From accuracy and AUC, we can have a general evaluation on models. But if we want to apply our model on some specific condition, we have to evaluate our model by Precision and Recall.
 
