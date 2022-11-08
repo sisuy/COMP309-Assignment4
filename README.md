@@ -12,11 +12,13 @@
 
 - Step1. Load Data && split the dataset
 
-  <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926164001209.png" alt="image-20220926164001209" style="zoom: 25%;" />
+  ![image-20221108134632217](assets/image-20221108134632217.png)
+  
+  
 
 * Step 2. Initial Data Analysis
 
-  <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926153442422.png" alt="image-20220926153442422" style="zoom: 33%;" />
+  ![image-20221108134641000](assets/image-20221108134641000.png)
 
 **Conclusion:** In this stage we can know there are 10 features in this dataset. We need to predict the value of price based on other 9 features. Also, there is no missing value in this dataset.
 
@@ -24,7 +26,7 @@
 
   Heat map
 
-  <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926163800751.png" alt="image-20220926163800751" style="zoom:50%;" />
+  ![image-20221108134650089](assets/image-20221108134650089.png)
 
 |           | Correlation |
 | :-------: | :---------: |
@@ -42,9 +44,9 @@
 
   |                            carat                             |                             cut                              |                            Color                             |                           Clarity                            |                            Depth                             |
   | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-  | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926154545627.png" alt="image-20220926154545627" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926154611593.png" alt="image-20220926154611593" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926154621247.png" alt="image-20220926154621247" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926154634195.png" alt="image-20220926154634195" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926154655938.png" alt="image-20220926154655938" style="zoom:150%;" /> |
+  | ![image-20221108134657278](assets/image-20221108134657278.png) | ![image-20221108134701360](assets/image-20221108134701360.png) | ![image-20221108134704101](assets/image-20221108134704101.png) | ![image-20221108134708412](assets/image-20221108134708412.png) | ![image-20221108134712990](assets/image-20221108134712990.png) |
   |                          **table**                           |                            **x**                             |                            **y**                             |                            **z**                             |                          **price**                           |
-  | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926155356153.png" alt="image-20220926155356153" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926155430092.png" alt="image-20220926155430092" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926155445448.png" alt="image-20220926155445448" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926155457515.png" alt="image-20220926155457515" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926155520347.png" alt="image-20220926155520347" style="zoom:150%;" /> |
+  | ![image-20221108134717645](assets/image-20221108134717645.png) | ![image-20221108134722073](assets/image-20221108134722073.png) | ![image-20221108134726094](assets/image-20221108134726094.png) | ![image-20221108134731269](assets/image-20221108134731269.png) | ![image-20221108134734813](assets/image-20221108134734813.png) |
 
 * Remove outliers
 
@@ -57,7 +59,7 @@
 
 * Right(origin), Left(after removing outliers)
 
-  ![image-20220926155650593](/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220926155650593.png)
+  ![image-20221108134742091](assets/image-20221108134742091.png)
 
 * Encode categorical features based on diamond documentation
 
@@ -136,11 +138,11 @@
 
       |                             Age                              |                          Work class                          |                            Fnglwt                            |                          Education                           |                        Education-num                         |
       | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-      | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163238550.png" alt="image-20220927163238550" style="zoom: 150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163244594.png" alt="image-20220927163244594" style="zoom: 150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163249127.png" alt="image-20220927163249127" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163253529.png" alt="image-20220927163253529" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163259490.png" alt="image-20220927163259490" style="zoom:150%;" /> |
+      | ![image-20221108134751944](assets/image-20221108134751944.png) | ![image-20221108134755850](assets/image-20221108134755850.png) | ![image-20221108134759512](assets/image-20221108134759512.png) | ![image-20221108134803289](assets/image-20221108134803289.png) | ![image-20221108134807071](assets/image-20221108134807071.png) |
       |                       **Relationship**                       |                           **Race**                           |                           **sex**                            |                       **Capital-gain**                       |                       **Capital-loss**                       |
-      | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163324213.png" alt="image-20220927163324213" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163329540.png" alt="image-20220927163329540" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163627578.png" alt="image-20220927163627578" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163631753.png" alt="image-20220927163631753" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163635621.png" alt="image-20220927163635621" style="zoom:150%;" /> |
+      | ![image-20221108134811765](assets/image-20221108134811765.png) | ![image-20221108134815274](assets/image-20221108134815274.png) | ![image-20221108134818772](assets/image-20221108134818772.png) | ![image-20221108134822402](assets/image-20221108134822402.png) | ![image-20221108134825543](assets/image-20221108134825543.png) |
       |                      **Hours-per-week**                      |                      **Native-country**                      |                          **Salary**                          |                                                              |                                                              |
-      | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163640303.png" alt="image-20220927163640303" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163650450.png" alt="image-20220927163650450" style="zoom:150%;" /> | <img src="/Users/li/Documents/VUW/COMP309/Assignment/Assignment4/assets/image-20220927163654994.png" alt="image-20220927163654994" style="zoom:150%;" /> |                                                              |                                                              |
+      | ![image-20221108134842972](assets/image-20221108134842972.png) | ![image-20221108134846731](assets/image-20221108134846731.png) | ![image-20221108134850229](assets/image-20221108134850229.png) |                                                              |                                                              |
 
       * From the plot we can find that there are:
         * numeric features: ['age', 'fnlgwt', 'education-num', 'capital-gain', 'capital-loss', 'hours-per-week', 'salary'] 
@@ -148,7 +150,7 @@
 
     *  Correlation Heatmap
 
-      <img src="assets/image-20220927164819960.png" alt="image-20220927164819960" style="zoom: 67%;" />
+      ![image-20221108134856729](assets/image-20221108134856729.png)
 
     * **One-hot encoding category features**
 
@@ -199,7 +201,7 @@
       high_salary_corr.sort_values(by="salary",ascending=False)
       ```
 
-      <img src="assets/image-20220927165030851.png" alt="image-20220927165030851" style="zoom: 25%;" />
+      <img src="assets/image-20221108134900992.png" alt="image-20221108134900992" style="zoom:50%;" />
 
     * Demension reduction based on correlation
 
